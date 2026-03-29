@@ -3,110 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio - Edu</title>
+
   <style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #0f172a;
-    color: #e2e8f0;
-    margin: 0;
-    padding: 20px;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      margin: 0;
+      padding: 20px;
+    }
 
-  h1 {
-    color: #38bdf8;
-  }
+    .container {
+      max-width: 800px;
+      margin: auto;
+    }
 
-  h2 {
-    border-bottom: 1px solid #334155;
-    padding-bottom: 5px;
-    margin-top: 30px;
-  }
+    h1 {
+      color: #38bdf8;
+      margin-bottom: 5px;
+    }
 
-  ul {
-    line-height: 1.6;
-  }
+    .subtitle {
+      color: #94a3b8;
+      margin-bottom: 20px;
+    }
 
-  a {
-    color: #38bdf8;
-    text-decoration: none;
-  }
+    h2 {
+      border-bottom: 1px solid #334155;
+      padding-bottom: 5px;
+      margin-top: 30px;
+    }
 
-  a:hover {
-    text-decoration: underline;
-  }
+    ul {
+      line-height: 1.6;
+      padding-left: 20px;
+    }
 
-  table {
-    margin-top: 10px;
-  }
+    li {
+      margin-bottom: 15px;
+    }
 
-  td {
-    padding: 8px;
-  }
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
 
-  img {
-    vertical-align: middle;
-  }
+    a:hover {
+      text-decoration: underline;
+    }
 
-</style>
+    table {
+      margin-top: 10px;
+    }
+
+    td {
+      padding: 8px;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .tech {
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+  </style>
 </head>
+
 <body>
+  <div class="container">
 
-  <h1>Edu</h1>
+    <h1>Edu</h1>
+    <p class="subtitle">Estudante de Engenharia de Software focado em Python e soluções práticas</p>
 
-  <h2>Sobre mim</h2>
-  <p>
-    Sou estudante de Engenharia de Software com foco em desenvolvimento em Python. 
-    Tenho interesse em criar soluções práticas, principalmente envolvendo automação, APIs e aplicações web. 
-    Atualmente estou evoluindo meus conhecimentos em banco de dados com MongoDB e buscando desenvolver projetos cada vez mais completos.
-  </p>
+    <h2>Sobre mim</h2>
+    <p>
+      Sou estudante de Engenharia de Software com foco em desenvolvimento em Python. 
+      Tenho interesse em criar soluções práticas, principalmente envolvendo automação, APIs e aplicações web. 
+      Atualmente estou evoluindo meus conhecimentos em banco de dados com MongoDB e buscando desenvolver projetos cada vez mais completos.
+    </p>
 
-  <h2>Projetos</h2>
-  <p>
-    <ul>
-  <li>
-    <strong>Agendador com Google Calendar</strong><br>
-    Aplicação que permite criar eventos automaticamente a partir de texto, integrando com a API do Google Calendar.<br>
-    Tecnologias: Python, APIs, Streamlit
-  </li>
+    <h2>Projetos</h2>
 
-  <li>
-    <strong>CRUD com MongoDB</strong><br>
-    Projeto para manipulação de dados utilizando operações de Create, Read, Update e Delete com banco de dados NoSQL.<br>
-    Tecnologias: Python, MongoDB
-  </li>
-</ul>
-  </p>
+    <div class="card">
+      <strong>Agendador com Google Calendar</strong><br>
+      <span class="tech">Python, APIs, Streamlit</span><br><br>
+      Aplicação que permite criar eventos automaticamente a partir de texto, integrando com a API do Google Calendar.
+    </div>
 
-  <h2>Habilidades</h2>
-  <p>
+    <div class="card">
+      <strong>CRUD com MongoDB</strong><br>
+      <span class="tech">Python, MongoDB</span><br><br>
+      Projeto para manipulação de dados utilizando operações de Create, Read, Update e Delete com banco de dados NoSQL.
+    </div>
+
+    <h2>Habilidades</h2>
+
     <table>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40"/></td>
-    <td>Python — desenvolvimento de aplicações, automação de tarefas e construção da lógica de sistemas</td>
-  </tr>
-  <tr>
-    <td><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/streamlit-icon.png" width="40"/></td>
-    <td>Streamlit — criação de aplicações web interativas de forma rápida e prática</td>
-  </tr>
-  <tr>
-    <td><img src='https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/langchain.png' width="40"/></td>
-    <td>LangChain — desenvolvimento de aplicações com modelos de linguagem e IA</td>
-  </tr>
-  <tr>
-    <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="40"/></td>
-    <td>MongoDB — manipulação de banco de dados NoSQL com operações CRUD</td>
-  </tr>
-</table>
-  </p>
+      <tr>
+        <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" width="40"/></td>
+        <td>Python — desenvolvimento de aplicações, automação de tarefas e construção da lógica de sistemas</td>
+      </tr>
+      <tr>
+        <td><img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/streamlit-icon.png" width="40"/></td>
+        <td>Streamlit — criação de aplicações web interativas de forma rápida e prática</td>
+      </tr>
+      <tr>
+        <td><img src='https://raw.githubusercontent.com/lobehub/lobe-icons/refs/heads/master/packages/static-png/dark/langchain.png' width="40"/></td>
+        <td>LangChain — desenvolvimento de aplicações com modelos de linguagem e IA</td>
+      </tr>
+      <tr>
+        <td><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="40"/></td>
+        <td>MongoDB — manipulação de banco de dados NoSQL com operações CRUD</td>
+      </tr>
+    </table>
 
-  <h2>Contato</h2>
-  <p>
+    <h2>Contato</h2>
     <ul>
-  <li>Email: eduardoluisbsb2@email.com</li>
-  <li>GitHub: https://github.com/Eduzeraaa</li>
-  <li>LinkedIn: https://www.linkedin.com/in/eduardo-luiss/</li>
-</ul>
-  </p>
+      <li>Email: eduardoluisbsb2@email.com</li>
+      <li><a href="https://github.com/Eduzeraaa" target="_blank">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/eduardo-luiss/" target="_blank">LinkedIn</a></li>
+    </ul>
 
+  </div>
 </body>
 </html>
