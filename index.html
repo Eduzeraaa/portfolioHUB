@@ -112,6 +112,34 @@
       color: #94a3b8;
     }
 
+
+
+    .recomendacoes {
+  position: relative;
+  height: 60px;
+  overflow: hidden;
+}
+
+.recomendacoes p {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  animation: slide 9s infinite;
+}
+
+.recomendacoes p:nth-child(1) { animation-delay: 0s; }
+.recomendacoes p:nth-child(2) { animation-delay: 3s; }
+.recomendacoes p:nth-child(3) { animation-delay: 6s; }
+
+@keyframes slide {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  30% { opacity: 1; }
+  40% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 0; }
+}
+
+    
   </style>
 </head>
 
@@ -190,6 +218,16 @@
   </tr>
     </table>
 
+
+    <h2>Recomendações</h2>
+
+    <div class="recomendacoes">
+      <p>"Edu demonstra dedicação e aprende rapidamente novos conceitos."</p>
+      <p>"Possui boa lógica e se destaca na resolução de problemas."</p>
+      <p>"Sempre busca evoluir e aplicar o que aprende na prática."</p>
+    </div>
+
+    
     <h2>Contato</h2>
     <ul>
       <li>📧 <a href="mailto:eduardoluisbsb2@email.com">Email</a></li>
