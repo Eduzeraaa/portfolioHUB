@@ -116,6 +116,7 @@
 
     .recomendacoes {
   position: relative;
+  width: 100%;
   height: 60px;
   overflow: hidden;
 }
@@ -124,19 +125,33 @@
   position: absolute;
   width: 100%;
   opacity: 0;
-  animation: slide 9s infinite;
+  animation: slideX 9s infinite;
 }
 
 .recomendacoes p:nth-child(1) { animation-delay: 0s; }
 .recomendacoes p:nth-child(2) { animation-delay: 3s; }
 .recomendacoes p:nth-child(3) { animation-delay: 6s; }
 
-@keyframes slide {
-  0% { opacity: 0; transform: translateY(20px); }
-  10% { opacity: 1; transform: translateY(0); }
-  30% { opacity: 1; }
-  40% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 0; }
+@keyframes slideX {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  10% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
     
@@ -222,9 +237,12 @@
     <h2>Recomendações</h2>
 
     <div class="recomendacoes">
-      <p>"Edu demonstra dedicação e aprende rapidamente novos conceitos."</p>
+      <p>"Eduardo demonstra dedicação e aprende rapidamente novos conceitos."</p>
       <p>"Possui boa lógica e se destaca na resolução de problemas."</p>
       <p>"Sempre busca evoluir e aplicar o que aprende na prática."</p>
+      <p>"Eduardo tem facilidade em aprender novas tecnologias e aplicar na prática com rapidez."</p>
+      <p>"Apresenta comprometimento com os projetos e sempre busca entregar soluções funcionais."</p>
+      <p>"Possui boa capacidade analítica e consegue resolver problemas de forma eficiente."</p>
     </div>
 
     
